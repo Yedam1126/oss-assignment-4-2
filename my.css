@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  table {
+    font-size: 0.8rem;
+  }
+  .btn {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+  table {
+    font-size: 1rem;
+  }
+}

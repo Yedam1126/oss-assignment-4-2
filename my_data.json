@@ -1,0 +1,14 @@
+{
+  "items": [
+    { "id": 1, "title": "Apple", "price": 1200, "stock": 40, "category": "fruit" },
+    { "id": 2, "title": "Banana", "price": 800, "stock": 55, "category": "fruit" },
+    { "id": 3, "title": "Milk", "price": 2000, "stock": 20, "category": "dairy" },
+    { "id": 4, "title": "Bread", "price": 1500, "stock": 30, "category": "bakery" },
+    { "id": 5, "title": "Eggs", "price": 2500, "stock": 12, "category": "dairy" },
+    { "id": 6, "title": "Tomato", "price": 900, "stock": 60, "category": "vegetable" },
+    { "id": 7, "title": "Potato", "price": 700, "stock": 80, "category": "vegetable" },
+    { "id": 8, "title": "Chicken", "price": 6500, "stock": 15, "category": "meat" },
+    { "id": 9, "title": "Beef", "price": 12000, "stock": 10, "category": "meat" },
+    { "id": 10, "title": "Orange", "price": 1100, "stock": 45, "category": "fruit" }
+  ]
+}

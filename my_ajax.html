@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX CRUD Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>AJAX CRUD Example</h1>
+
+<h2>📌 데이터 목록</h2>
+<table border="1" id="data-table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Category</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<h2>✅ 데이터 추가</h2>
+<form id="addForm">
+    <input type="text" id="add-title" placeholder="Title" required>
+    <input type="number" id="add-price" placeholder="Price" required>
+    <input type="number" id="add-stock" placeholder="Stock" required>
+    <input type="text" id="add-category" placeholder="Category" required>
+    <button type="submit">추가</button>
+</form>
+
+<h2>✏ 수정하기</h2>
+<form id="editForm">
+    <input type="hidden" id="edit-id">
+    <input type="text" id="edit-title" placeholder="Title" required>
+    <input type="number" id="edit-price" placeholder="Price" required>
+    <input type="number" id="edit-stock" placeholder="Stock" required>
+    <input type="text" id="edit-category" placeholder="Category" required>
+    <button type="submit">수정</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>

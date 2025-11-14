@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX CRUD with Modal</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-4">
+
+<h1>AJAX CRUD Example (Modal)</h1>
+
+<!-- 데이터 목록 -->
+<h2>📌 데이터 목록</h2>
+<table class="table table-bordered" id="data-table">
+    <thead class="table-light">
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Category</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<!-- 버튼: 데이터 추가 모달 열기 -->
+<button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addModal">데이터 추가</button>
+
+<!-- =================== Add Modal =================== -->
+<div class="modal fade" id="addModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">데이터 추가</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form id="addForm">
+          <input type="text" id="add-title" class="form-control mb-2" placeholder="Title" required>
+          <input type="number" id="add-price" class="form-control mb-2" placeholder="Price" required>
+          <input type="number" id="add-stock" class="form-control mb-2" placeholder="Stock" required>
+          <input type="text" id="add-category" class="form-control mb-2" placeholder="Category" required>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+        <button type="button" class="btn btn-primary" id="add-submit">추가</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =================== Edit Modal =================== -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">데이터 수정</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form id="editForm">
+          <input type="hidden" id="edit-id">
+          <input type="text" id="edit-title" class="form-control mb-2" placeholder="Title" required>
+          <input type="number" id="edit-price" class="form-control mb-2" placeholder="Price" required>
+          <input type="number" id="edit-stock" class="form-control mb-2" placeholder="Stock" required>
+          <input type="text" id="edit-category" class="form-control mb-2" placeholder="Category" required>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+        <button type="button" class="btn btn-primary" id="edit-submit">수정</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS + Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
